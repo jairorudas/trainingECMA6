@@ -1,2 +1,2 @@
 # trainingECMA6
-Este repositório só tem objetivos didático.
+Este repositório só tem objetivos didáticos.
