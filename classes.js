@@ -12,7 +12,7 @@ class Usuario {
         this._nome = nome,
         this._sobreNome = sobrenome,
         this._dia = diaNascimento;
-        Object.freeze(this);
+        //Object.freeze(this);
     }
 
     get diaNascimento(){
@@ -32,7 +32,6 @@ class Usuario {
     }
 }
 
-console.log(Object.isExtensible(Number));
 class UsuarioPremium extends Usuario {
     constructor(nome, sobrenome, idade, flag){
         super(nome, sobrenome, idade)
