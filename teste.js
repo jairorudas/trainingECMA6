@@ -1,7 +1,7 @@
 function timeout(duration = 0) {
     return new Promise((resolve, reject) => {
         setTimeout(resolve, duration);
-    })
+    }, 2000)
 }
 
 var p = timeout(1000).then(() => {
