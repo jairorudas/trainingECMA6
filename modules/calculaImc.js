@@ -1,7 +1,11 @@
 //Calcula IMC
 // primeira forma de exportar um modulo Sintax ECMA6.
 
-// A variavel numero fica privada pois não foi inclusa no module.exports.
+/* 
+    As variaveis a seguir, estão só de forma ilustrativa. tudo que esteja fora do module.exports
+    não será visivel fora do modulo.
+*/ 
+
 var peso,
     altura; 
 
