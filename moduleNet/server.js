@@ -64,4 +64,9 @@ net.createServer((connection) => {
     */
     broadcast(`${connection.nickname} > ${message}`, connection);
   });
+
+  connection.on('end', () => {
+    broadcast(`${connection.nickname} deixou a sala!`, connection);
+    connections.splice(connections.indexOf(connection), 1);
+  })
 }).listen(3000);

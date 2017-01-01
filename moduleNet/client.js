@@ -2,6 +2,9 @@ const net = require('net');
 
 const client = net.connect({host: '127.0.0.1', port: 3000});
 
+//Escutando finalização do socket por parte do server
+client.on('end', () => process.exit());
+
 process.stdin.on('readable', () => {
   //O lido aqui é um buffer.
   let message = process.stdin.read();
