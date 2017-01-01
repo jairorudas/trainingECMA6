@@ -53,7 +53,7 @@ net.createServer((connection) => {
 
   connection.on('data', (message) => {
     let command = message.toString();
-    if (command.indexOf('./nickname') === 0) {
+    if (command.indexOf('/nickname') === 0) {
       let nickname = command.replace('/nickname', '');
       broadcast(`${connection.nickname} is now ${nickname}`);
       connection.nickname = nickname;
