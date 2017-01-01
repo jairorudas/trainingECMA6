@@ -3,10 +3,13 @@ const options = [
     'a) pid',
     'b) title',
     'c) arch',
-    'd) platform'
+    'd) platform',
+    'v) Versões',
+    'q) Exit',
+    'u) upTime'
 ]
 
-var showOptions = function(){
+let showOptions = function(){
     options.forEach((option) => console.log(`${option} \n`))
 }
 

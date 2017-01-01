@@ -13,16 +13,16 @@ const pessoa = {
     }
 }
 
-/*  
-    Extraindo as propriedade do objeto pessoa, e declarando-as fora no arquivo, 
-    mas o objeto pessoa continua intacto não é modificado. Além colocamos um parametro padrão que é Rio de janeiro. 
+/*
+    Extraindo as propriedade do objeto pessoa, e declarando-as fora no arquivo,
+    mas o objeto pessoa continua intacto não é modificado. Além colocamos um parametro padrão que é Rio de janeiro.
 */
 let {nome, sobrenome, idade, profissao, endereco:{rua} , estado = `Rio de Janeiro`} = pessoa;
 console.log(nome, sobrenome, idade, profissao, estado, rua);
 
 
 /*
-    Aqui trocamos os nomes das propriedades do objeto pessoa para espanhol, 
+    Aqui trocamos os nomes das propriedades do objeto pessoa para espanhol,
     quer dizer que a variaveis passam a ser os nomes em espanhol e não em portugues.
 
     Como se ve encima let não permitiria declarar variaveis com o mesmo nome no mesmo scopo.
