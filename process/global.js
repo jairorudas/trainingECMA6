@@ -11,7 +11,6 @@ if (options.length == 0) {
     return;
 }
 
-
 switch (options[0]) {
     case 'a':
         console.log(`pid: ${process.pid}`)
