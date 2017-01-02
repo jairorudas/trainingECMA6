@@ -67,6 +67,8 @@ net.createServer((connection) => {
 
   connection.on('end', () => {
     broadcast(`${connection.nickname} deixou a sala!`, connection);
+    
+    //Apaga a conecção que saiu do chat.
     connections.splice(connections.indexOf(connection), 1);
   })
 }).listen(3000);
